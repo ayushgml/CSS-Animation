@@ -1,0 +1,39 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: rgb(26, 25, 25);
+}
+
+.center{
+    position: absolute;
+    top: 50%;
+    transform:translateY(-50%);
+    width: 100%;
+}
+
+h1{
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    font-size: 10em;
+    color: transparent;
+    text-transform: uppercase;
+    background-image: linear-gradient(to right, #f00,#ff0,#0ff,#0f0,#00f);
+    -webkit-background-clip:text;
+    animation: animate 20s linear infinite;
+    background-size: 1000%;
+}
+@keyframes animate{
+    0%{
+        background-position: 0% 100%;
+    }
+
+    50%{
+        background-position: 100% 0%;
+    }
+
+    100%{
+        background-position: 0% 100%;
+    }
+}
